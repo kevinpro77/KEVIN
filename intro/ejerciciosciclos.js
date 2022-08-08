@@ -108,6 +108,29 @@ for (var i = 1; i <= n; i++) {
 
 }
 
+/*  9 . Calcular la operación x nsin utilizar la función pow */
+var n = Math.round(Math.random() * 10),
+    x = Math.round(Math.random() * 50)
+console.log(x + ' ' + n)
+for (i = 1; i <= n; i++) {
+    x = x * x
+}
+console.log(Math.trunc(x))
+
+/*10 Algoritmo para hallar el m.c.d de dos números m y n por
+el algoritmo de Euclides*/
+var m = Math.round(Math.random() * 100),
+    n = Math.round(Math.random() * 100)
+console.log(m + ' ' + n)
+var r1 = Math.trunc(m / n),
+    r2 = n * r1,
+    r3 = m - r2,
+    r4 = n % r3
+if (r4 == 0) {
+    console.log('el m.c.d es ' + r3)
+}
+
+
 //ejercicio 12 ciclos 
 
 let N = Math.round(Math.random() * 15);
