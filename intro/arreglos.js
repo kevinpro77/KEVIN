@@ -106,21 +106,21 @@
  console.log('el numero menor es: ' + mayor)
 
  //buscar un elemento dentro de un arreglo
- /*let v=[];
- let t=Math.round((Math.random()*20-10)+10)
- console.log(`Valor variable tam= ${t}`);
+ let ve = [];
+ let ta = Math.round((Math.random() * 20 - 10) + 10)
+ console.log(`Valor variable tam= ${ta}`);
 
- for(let i=0; i<t; i++){
-   v[i]=Math.round(Math.random()*100)
+ for (let i = 0; i < ta; i++) {
+     ve[i] = Math.round(Math.random() * 100)
  }
- console.log(v)
+ console.log(ve)
 
- var x=Math.round((Math.random()*20-10)+10)
- if(x in v){
-   console.log('El numero se encuentra en la lista ')
- }else{
-   console.log('El numero no se encuentra en la lista ')
- }*/
+ var x = Math.round((Math.random() * 20 - 10) + 10)
+ if (x in ve) {
+     console.log('El numero se encuentra en la lista ')
+ } else {
+     console.log('El numero no se encuentra en la lista ')
+ }
 
  //ordenar un arrgelo de menor a mayor (algoritmo de la burbuja)
  let vector7 = [],
