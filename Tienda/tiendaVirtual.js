@@ -17,3 +17,8 @@ get nitTienda() {
 };
 }
 module.exports=tiendaVirtual;
+
+
+
+
+

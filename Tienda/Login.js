@@ -1,5 +1,7 @@
-class Login {
-    constructor(Usuario,Contraseña){
+const tiendaVirtual = require('./tiendaVirtual')
+class Login extends tiendaVirtual {
+    constructor(Nit,Nombre,Usuario,Contraseña){
+        super(Nit,Nombre)
         this._Usuario=Usuario;
         this._Contraseña=Contraseña;
     }

@@ -1,12 +1,15 @@
-class Persona {
-    constructor(Id, Documento,Nombres,Apellidos,Genero,Correo,Rol) {
-        this._documento = Id;
-        this._nombre = Documento;
-        this._documento = Nombres;
-        this._documento = Apellidos;
-        this._documento = Genero;
-        this._documento = Correo;
-        this._documento = Rol;
+
+const login = require('./Login')
+class Persona extends login{
+    constructor(Nit,Nombre,Usuario,Contraseña,Id, Documento,Nombres,Apellidos,Genero,Correo,Rol) {
+      super (Nit,Nombre,Usuario,Contraseña)
+        this._Id = Id;
+        this._Documento = Documento;
+        this._Nombres = Nombres;
+        this._Apellidos = Apellidos;
+        this._Genero = Genero;
+        this._Correo = Correo;
+        this._Rol = Rol;
     }
     set Id(Id) {
       this._Id = Id;
