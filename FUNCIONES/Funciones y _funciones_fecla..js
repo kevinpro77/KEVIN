@@ -8,14 +8,14 @@ console.log(saludar());
 //funcion flecha sin paramentros 
 const saludar2 = () => `hola ADSI`;
 console.log(saludar2());
-
+//
 
 //funcion flecha con un paramentros
 const saludar3 = (nombre) => `hola ${nombre} ¿conoces soacha?`;
 console.log(saludar3('instructor samuel'));
 
 
-
+//
 
 /***/
 //  1. funcion para resolver el teorema de pitagoras con flecha
