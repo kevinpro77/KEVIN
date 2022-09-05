@@ -39,13 +39,13 @@ const xn = (n, x) => {
 
 //  Calcular la operación xn sin utilizar la función pow 
 
-function xn(n, x) {
+/*function xn(n, x) {
     for (var i = 1; i <= n; i++) {
         x = x * x
     }
     return console.log(Math.trunc(x))
 }
-(xn(6, 2));
+(xn(6, 2));*/
 
 
 
@@ -59,13 +59,13 @@ const multiplos = (n) => {
 multiplos(50);
 
 //Determinar cuales son los múltiplos de 5 comprendidos entre  y N.
-function multiplos(n) {
+/*function multiplos(n) {
     for (var i = 1; i <= n; i++) {
         if (i % 5 == 0)
             return console.log(i);
     }
 }
-multiplos(50);
+multiplos(10);*/
 
 // 4. determinar  si un numero es perfecto  con flecha
 const perfecto = (num) => {
@@ -86,7 +86,7 @@ console.log(perfecto(28));
 
 //determinar  si un numero es perfecto  con flecha
 
-function perfecto(num) {
+/*function perfecto(num) {
     let suma = 0
     for (let i = 01; i < num; i++) {
         if (num % i == 0) {
@@ -101,7 +101,7 @@ function perfecto(num) {
 
 }
 console.log(perfecto(28));
-
+*/
 //quinto ejercicio ciclos
 function divisible(n) {
     var n = Math.round(Math.random() * 100);
@@ -117,21 +117,21 @@ function divisible(n) {
 }
 divisible()
     //quinto ejercicio
-const divisible = (n) => {
-    var n = Math.round(Math.random() * 100);
-    console.log(`${n}, es divible por:`);
+    /*const divisible = (n) => {
+        var n = Math.round(Math.random() * 100);
+        console.log(`${n}, es divible por:`);
 
-    for (cont = 1; cont <= n; cont++) {
-        if (n % cont == 0) {
+        for (cont = 1; cont <= n; cont++) {
+            if (n % cont == 0) {
 
-            console.log(cont);
+                console.log(cont);
+            }
+
         }
-
     }
-}
-divisible()
+    divisible()
 
-
+    */
 
 
 // primer ejercicio de condicionales
@@ -156,7 +156,7 @@ cifras()
 //   Pedir un número entre 0 y 9.999 y decir cuantas cifras tiene. 
 // Cuando el número exceda los límites emita un mensaje y finalice el programa flecha
 
-const cifras = (numero) => {
+/*const cifras = (numero) => {
     var numero = Math.round(Math.random() * 99999)
     if (numero < 10)
         return console.log(numero, '\n El numero tiene 1 cifra')
@@ -169,7 +169,7 @@ const cifras = (numero) => {
     else if (numero < 100000)
         return console.log(numero, '\n El numero tiene  5 cifras')
 }
-cifras()
+cifras()*/
 
 // segundo ejercicio condicionales
 //Pedir una nota de 0 a 10 y mostrarla de la forma: Insuficiente, Suficiente, Bien,
@@ -194,7 +194,7 @@ notas()
 
 //Pedir una nota de 0 a 10 y mostrarla de la forma: Insuficiente, Suficiente, Bien,
 //etc. Use la escala que prefiera, pero cerciórese que tiene 5 valores
-const notas = (nota) => {
+/*const notas = (nota) => {
     var nota = Math.round(Math.random() * 10);
     console.log(`Su nota es: ${nota}`);
 
@@ -211,7 +211,7 @@ const notas = (nota) => {
     }
 }
 notas()
-
+*/
 // tercer ejercicio condicionales
 // responda correctamente las tres preguntas. Si se responde mal a cualquiera de
 //ellas ya no se pregunta la siguiente y termina el juego. Las preguntas son:
@@ -256,7 +256,7 @@ preguntas()
 // La independencia de Colombia fue en el año 1810?
 // The Doors fue un grupo de rock Americano?
 
-const preguntas = (x, y, z) => {
+/*const preguntas = (x, y, z) => {
     var x = Math.round(Math.random() * 2);
     var y = Math.round(Math.random() * 2);
     var z = Math.round(Math.random() * 2);
@@ -285,7 +285,7 @@ const preguntas = (x, y, z) => {
     }
 }
 preguntas()
-
+*/
 // cuarto ejercicio condicionales
 //Pida un numero al usuario que representa días del año. Diga a que mes del año
 //corresponde así. Si el número es menor o igual a 31 indica que esta en enero,
@@ -328,7 +328,7 @@ mes()
     //Pero si el número por ejemplo es 32 indica que es el 1 de febrero. No tenga en
     //cuenta si el año es bisiesto, es decir siempre febrero tiene 28 días.
 
-const mes = (n) => {
+/*const mes = (n) => {
     var n = Math.round(Math.random() * 365)
     console.log
     if (n <= 0) {
@@ -359,14 +359,14 @@ const mes = (n) => {
         console.log(n, '\n', "El numero ingresado muestra el mes de DIEMBRE")
     }
 }
-mes()
+mes()*/
 
 // quinto ejercicio condicionales
 //Un obrero necesita calcular su salario semanal, el cual se obtiene de la sig.manera:
 //Si trabaja 40 horas o menos se le paga $2600 por hora
 //Si trabaja más de 40 horas se le paga $2600 por cada una de las primeras 40
 //horas y $5000 por cada hora extra
-function salario(horastrabajadas) {
+/*function salario(horastrabajadas) {
     var horastrabajadas = Math.round(Math.random() * 100);
     var horasextras = 0
     var total = 0
@@ -387,7 +387,7 @@ salario()
 //Si trabaja más de 40 horas se le paga $2600 por cada una de las primeras 40
 //horas y $5000 por cada hora extra
 
-const salario = (horastrabajadas) => {
+/*const salario = (horastrabajadas) => {
     var horastrabajadas = Math.round(Math.random() * 100);
     var horasextras = 0
     var total = 0
@@ -432,7 +432,7 @@ function desviacion() {
 
 }
 desviacion()
-
+*/
 //desviacion con flecha
 const desviacion = () => {
     let v = [],
@@ -528,7 +528,7 @@ moda()
 // mediana
 
 /*MEDIANA numero del centro*/
-
+/*
 function medianaArr(arr1) {
     var concat = arr1;
     concat = concat.sort(
@@ -537,7 +537,7 @@ function medianaArr(arr1) {
     console.log(concat);
     var length = concat.length;
 
-    if (length % 2 == 1) {
+    if (length % 2 == 0) {
 
         console.log(concat[(length / 2) - .5])
         return concat[(length / 2) - .5]
@@ -550,5 +550,51 @@ function medianaArr(arr1) {
     }
 }
 arr1 = [1, 4, 5, 7, 9, 10, 11]
+medianaArr()
+*/
+//.............................................................................................................
+//PRUEBA 
+//.............................................................................................................
 
-medianaArr(arr1)
+/*escriba una funcion que llene un ARRAY CON N NUMEROS (N DEBE SER MINIMO 5 Y MAXIMO 25) */
+
+
+
+
+function llenarArray(prueba) {
+    tam = Math.round((Math.random() * 10 - 5) + 15)
+    for (let i = 0; i < tam; i++) {
+        prueba[i] = Math.round(Math.random() * 100);
+    }
+    return (prueba)
+}
+arreglo = []
+llenarArray(arreglo)
+console.log(arreglo)
+
+
+function media(prueba) {
+    var suma = 0
+    for (let i = 0; i < prueba.length; i++) {
+        suma = suma + prueba[i];
+    }
+    media = (suma / arreglo.length)
+    return (media)
+}
+medias = media(arreglo);
+
+
+
+console.log(medias)
+
+function diferencias(array) {
+    for (let i = 0; i < array.length; i++) {
+
+    }
+}
+/* ESCRIBA UNA FUNCION QUE RECIBA EL ARRAY LLENO Y RETORNE OTRO ARREGLO CON LA DIFERENCIA 
+QUE HAY ENTRE EL VALOR DE CADA ELEMENTO Y LA MEDIA DEL ARREGLO */
+
+
+/* ESCRIBA UNA FUNCION QUE RECIBA EL ARREGLO CON LAS DIFERENCIAS DEL PUNTO ANTERIOR Y DIGA DE CADA UNO 
+CUANTO LE FALTA O CUANTO LE SOBRA SEGUN EL CASO CON REFERENCIA A LA MEDIA */
