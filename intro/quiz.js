@@ -52,3 +52,20 @@ for (let i = 10; i >= 1; i--) {
     }
     console.log(resultado);
 }
+
+
+
+//FUNCION PARA DETERMINAR VOCALES Y CONSONANTES
+const palabra = "agosto";
+const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+
+function cuantasLetras(cadena) {
+    var cont = 0;
+    cadena.forEach(element => {
+        if (element.in(vowels)) {
+            cont++;
+        }
+    });
+    return cont;
+}
+console.log(cuantasLetras('agosto'));
