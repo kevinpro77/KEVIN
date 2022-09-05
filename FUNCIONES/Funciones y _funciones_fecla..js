@@ -15,7 +15,7 @@ const saludar3 = (nombre) => `hola ${nombre} ¿conoces soacha?`;
 console.log(saludar3('instructor samuel'));
 
 
-//
+//gs
 
 /***/
 //  1. funcion para resolver el teorema de pitagoras con flecha
