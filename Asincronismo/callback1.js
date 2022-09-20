@@ -13,8 +13,6 @@ receptora()
         console.log('Función anónima'), funcionArgumento, 100;
     })
 
-
-
 function funcionArgumento(parametro) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -23,5 +21,4 @@ function funcionArgumento(parametro) {
     })
 
 }
-
 receptora(() => console.log('Función anónima'), funcionArgumento, 100);

@@ -1,14 +1,15 @@
 function trabajoArreglos(cb1, cb2) {
     return new Promise((resolve, reject) => {
-        resolve()
         cb1();
         cb2();
+        var vec = []
         setTimeout(() => {
-            let vec = []
+
             console.log(vec)
         }, 4000);
         vec = cb1(vec);
         console.log(cb2(vec));
+        resolve(vec)
     });
 }
 trabajoArreglos()
