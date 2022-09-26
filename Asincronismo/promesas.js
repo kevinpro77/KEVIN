@@ -1,4 +1,4 @@
-/*const p = new Promise((resolve, reject) => {
+const p = new Promise((resolve, reject) => {
     let x = 11
     setTimeout(() => {
         if (x == 10) {

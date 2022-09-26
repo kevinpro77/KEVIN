@@ -64,43 +64,58 @@ en la función.
 */
 //Practice exercise 13.3
 
-
 let contador = 0;
 
-function salida_tiempo(val) {
+function salida_tiempo(valor) {
     return new Promise(resolve => {
         setTimeout(() => {
             contador++;
-            resolve(`valor x ${val} contador:${contador}`);
+            resolve(`valor x ${valor} contador:${contador}`);
         }, 2000);
     });
 }
-async function aCall(val) {
-    const res = await salida_tiempo(val)
-    return new Promise(() => {
+async function aCall(valor) {
+    console.log(`valor x ${valor} contador:${contador}`);
+    const res = await salida_tiempo(valor)
+    return new Promise((resolve) => {
         contador++;
-        `valor x ${val} contador:${contador}`, res
+        resolve(`valor x ${valor} contador:${contador}`), res
     })
 }
-
-
-
-
-
 
 async function repeticion(valor) {
     const array = await aCall(valor)
     for (let i = 0; i < 10; i++) {
-
+        aCall(i)
+        console.log(array)
     }
-
 }
+salida_tiempo(5)
 
-repeticion(3)
-    // function outputTime(val) {
-    //     setTimeout(() => {
-    //         cnt2++;
-    //         console.log(`valor x ${val} contador:${cnt2}`);
-    //     }, 1000);
-    // }
-    // outputTime()
+
+// function outputTime(val) {
+//     setTimeout(() => {
+//         cnt2++;
+//         console.log(`valor x ${val} contador:${cnt2}`);
+//     }, 1000);
+// }
+// outputTime()
+
+let cnt = 0;
+
+function outputTime(val) {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            cnt++;
+            resolve(`x value ${val} counter:${cnt}`);
+        }, 1000);
+    });
+}
+async function aCall(val) {
+    console.log(`ready ${val} counter:${cnt}`);
+    const res = await outputTime(val);
+    console.log(res);
+}
+for (let x = 1; x < 4; x++) {
+    aCall(x);
+}
